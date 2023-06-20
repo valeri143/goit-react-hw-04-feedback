@@ -37,13 +37,13 @@ export const App = () => {
   return (
       <StyledBox>
         <Section title="Please leave your feedback">
-  {options.map((option) => (
-    <StyledButton key={option} onClick={() => handleFeedback(option)}>
-      {option}
-    </StyledButton>
-  ))}
+        {options.map((option) => (
+        <StyledButton key={option} onClick={() => handleFeedback(option)}>
+        {option}
+        </StyledButton>
+         ))}
         </Section>
-  {totalFeedback > 0 ? (
+        {totalFeedback > 0 ? (
           <Section title="Statistics">
             <Statistics
               good={good}
